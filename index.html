@@ -46,7 +46,7 @@
                 var recognition = new SpeechRecognition();
             recognition.continuous     = true;
 recognition.interimResults = true;
-			    
+	 recognition.lang = 'es-MX | en-US';		    
 			    
                 // This runs when the speech recognition service starts
                 recognition.onstart = function() {
