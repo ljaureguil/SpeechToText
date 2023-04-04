@@ -70,11 +70,15 @@ recognition.interimResults = true;
                  recognition.start();
 	        }
 	recognition.onend = function(){
-setTimeout(function(){recognition.start();},100);
+		////
+		///
+		///
+//setTimeout(function(){recognition.start();},100);
 
 // sets off a beep/noise each time it is accessed from a cell phone (Andoid).
 
 // does NOT if accessed from a desktop (Windows using Chrome).
+		recognition.start();
 };		
 			
 			
