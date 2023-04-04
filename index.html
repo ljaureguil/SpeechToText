@@ -65,11 +65,8 @@ recognition.interimResults = true;
                     output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
                     output.classList.remove("hide");
                 };
-              
-                 // start recognition
-                 recognition.start();
-	        }
-	recognition.onend = function(){
+			  
+					recognition.onend = function(){
 		////
 		///
 		///
@@ -80,6 +77,11 @@ recognition.interimResults = true;
 // does NOT if accessed from a desktop (Windows using Chrome).
 		recognition.start();
 };		
+
+                 // start recognition
+                 recognition.start();
+	        }
+
 			
 			
 			
